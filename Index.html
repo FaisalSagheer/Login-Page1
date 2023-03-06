@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            display: flex; 
+            justify-content: center;  
+        }
+         .login-pg {  
+          background-color:  #f0f0f0;
+          width: 25rem;
+          height: 15rem;
+          padding-top: 2rem;
+          border-radius: 5px;
+          margin: 5rem 0;
+          /* border: 2px solid black; */
+        } 
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+        }
+        .login-pg .form-info {
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .form-info input{
+            font-size: 20px;
+            text-align: center;
+            margin: .4rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #000;
+        }
+        .form-info label{
+          font-size: 18px;      
+        } 
+        .form-info #username{
+            font-size: 20px;
+            padding: 0;
+            margin: 14px;
+            text-align: center;
+        }
+        form .form-info  i{
+            font-size: 20px;
+            font-weight: bold;
+            margin: .2rem;
+            }
+        .form-info #email {
+            font-size: 20px;
+            margin: 12px;
+            padding: 0;
+            text-align: center;
+        }
+        .form-info #password {
+            font-size: 20px;
+            margin: 13px;
+            padding: 0;
+            text-align: center;
+        }
+
+        form  #submit {
+            font-size: 20px;
+            padding: 0 4px;
+            margin: 4px 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-pg">
+        <h2>Sign In</h2>
+        <form action="/" method="get">
+            <div class="form-info">
+                <label for="User-Name">User Name</label>
+                <i class="bx bx-user"></i>
+                <input type="text" name="username" id="username" placeholder="User Name">
+            </div>
+            <div class="form-info">
+                <label for="E-mail">E-mail</label>
+                <i class="bx bx-mail-send"></i>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+             <div class="form-info">
+                 <label for="password">Password</label>
+                 <i class="bx bx-lock"></i>
+                     <input type="password" name="password" id="password" placeholder="Password" minlength="8">
+                </div>                      
+                   <button  type="submit" id="submit" class="btn btn-primary">Sign in</button>             
+        </form>
+    </div>
+    <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+
+
